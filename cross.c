@@ -54,9 +54,13 @@ int cross_init(void) {
 #endif
 
     float vertices[] = {
-        0.f, 1.f, 1.f, 0.f, 0.f, 1.f,
-        -1.f, -1.f, 0.f, 1.f, 0.f, 1.f,
-        1.f, -1.f, 0.f, 0.f, 1.f, 1.f
+        -0.5f,  0.5f, 1.f, 0.f, 0.f, 1.f,
+         0.5f,  0.5f, 0.f, 1.f, 0.f, 1.f,
+        -0.5f, -0.5f, 0.f, 0.f, 1.f, 1.f,
+
+        -0.5f, -0.5f, 0.f, 0.f, 1.f, 1.f,
+         0.5f, -0.5f, 1.f, 0.f, 0.f, 1.f,
+         0.5f,  0.5f, 0.f, 1.f, 0.f, 1.f
     };
 
     glGenVertexArrays(1, &vao);
@@ -90,7 +94,7 @@ static inline void main_loop(void) {
 
     glUseProgram(program);
     glBindVertexArray(vao);
-    glDrawArrays(GL_TRIANGLES, 0, 3);
+    glDrawArrays(GL_TRIANGLES, 0, 6);
     glBindVertexArray(0);
     glUseProgram(0);
 
