@@ -1,0 +1,12 @@
+[
+{
+  "directory": "/home/canoi/cross_gl/build",
+  "command": "/usr/bin/gcc  -I/home/canoi/cross_gl/glad/include -g -o CMakeFiles/cross_gl.dir/main.c.o -c /home/canoi/cross_gl/main.c",
+  "file": "/home/canoi/cross_gl/main.c"
+},
+{
+  "directory": "/home/canoi/cross_gl/build",
+  "command": "/usr/bin/gcc  -I/home/canoi/cross_gl/glad/include -g -o CMakeFiles/cross_gl.dir/glad/src/glad.c.o -c /home/canoi/cross_gl/glad/src/glad.c",
+  "file": "/home/canoi/cross_gl/glad/src/glad.c"
+}
+]
