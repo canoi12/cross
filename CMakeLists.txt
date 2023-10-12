@@ -27,6 +27,7 @@ find_package(SDL2 REQUIRED)
 find_package(OpenGL REQUIRED)
 
 set(LIBRARIES ${OPENGL_LIBRARIES} ${SDL2_LIBRARIES})
+include_directories(${OPENGL_INCLUDE_DIR} ${SDL2_INCLUDE_DIRS})
 
 if (WIN32)
     if (MSVC)
